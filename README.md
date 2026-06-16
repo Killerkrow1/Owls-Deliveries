@@ -1,3 +1,8 @@
+# UPDATED STUFF
+Killerkrow here x2
+
+Updated to (hopefully) use a custom tag for any item that is a bundle, this way it can work with the mod Vanilla Backport. Updated for the Paradigm SMP S2.
+
 <center>
   <h1>Owls & Deliveries</h1>
   <a href="https://modrinth.com/mod/fabric-api/">

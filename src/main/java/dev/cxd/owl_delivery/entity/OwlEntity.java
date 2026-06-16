@@ -4,6 +4,7 @@ import dev.cxd.owl_delivery.entity.goals.FlyTreeGoal;
 import dev.cxd.owl_delivery.entity.goals.OwlDeliverBundleGoal;
 import dev.cxd.owl_delivery.init.ModEntities;
 import dev.cxd.owl_delivery.init.ModSounds;
+import dev.cxd.owl_delivery.init.ModTags;
 import net.minecraft.entity.AnimationState;
 import net.minecraft.entity.EntityData;
 import net.minecraft.entity.EntityType;
@@ -166,7 +167,7 @@ public class OwlEntity extends TameableEntity implements Angerable {
             return ActionResult.SUCCESS;
         }
 
-        if (this.isTamed() && this.isOwner(player) && stack.isOf(Items.BUNDLE) && !stack.getName().getString().isEmpty()) {
+        if (this.isTamed() && this.isOwner(player) && stack.isIn(ModTags.Items.BUNDLE) && !stack.getName().getString().isEmpty()) {
             String targetName = stack.getName().getString();
             MinecraftServer server = this.getServer();
             if (server != null) {
